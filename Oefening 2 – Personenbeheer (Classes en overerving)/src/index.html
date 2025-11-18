@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>smoke test</title>
+    <script src="./js/main.js" type="module"></script>
+</head>
+<body>
+<div class="card shadow-sm mt-4">
+    <div class="card-header bg-success text-white">
+        Oefening 2 - Personenbeheer (Classes en overerving) - ZONDER AI
+    </div>
+    <div class="card-body">
+        <p class="small text-muted">
+            Maak classes Person, Employee en Manager. Voeg personen toe via deze UI
+            en
+            toon het resultaat in de lijst.
+        </p>
+        <div class="row g-2 mb-3">
+            <div class="col-md-4">
+                <select class="form-select" id="ex2_type">
+                    <option value="employee">Employee</option>
+                    <option value="manager">Manager</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <input class="form-control" id="ex2_name" placeholder="Naam">
+            </div>
+            <div class="col-md-4">
+                <input class="form-control" id="ex2_age" placeholder="Leeftijd"
+                       type="number">
+            </div>
+        </div>
+        <div class="row g-2 mb-3">
+            <div class="col-md-6">
+                <input class="form-control" id="ex2_dep" placeholder="Departement">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control" id="ex2_team" placeholder="Teamgrootte (manager)"
+                       type="number">
+            </div>
+        </div>
+        <button class="btn btn-success w-100 mb-3" id="ex2_btn">Voeg persoon
+            toe
+        </button>
+        <ul class="list-group mb-2" id="ex2_list"></ul>
+        <div class="alert alert-secondary" id="ex2_feedback">
+            Nog geen personen toegevoegd.
+        </div>
+    </div>
+</div>
+</body>
+</html>
