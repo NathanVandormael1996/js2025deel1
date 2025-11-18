@@ -14,7 +14,7 @@ const feedback = document.getElementById("ex1_feedback");
 function makeList(name, min){
     const output = document.getElementById("ex1_list");
     output.innerHTML = list
-        .map(i => `<li>${name} - ${min} min</li>`)
+        .map(i => `<li>${i[0]} - ${i[1]} min</li>`)
         .join("");
     feedback.innerText = `Goed bezig! je hebt nu ${list.length} oefeningen gedaan!`;
     feedback.className = "alert alert-success";
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
         totalTime += inputMin;
         totalMin.innerText = totalTime;
-        list.push(inputName);
+        list.push([inputName, inputMin]);
         makeList(inputName, inputMin);
     });
 })
